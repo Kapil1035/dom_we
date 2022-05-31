@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="firstname">Hello</h1>
+	<div id="lastname">MASAI</div>
+	<p id="fullname">School</p>
+	<hr/>
+	<button onclick="setFirstName()">FIRSTNAME</button>
+	<button onclick="setLastName()">LASTNAME</button>
+	<button onclick="setFullName()">FIRSTNAME NAME</button>
+	<button onclick="resetDefaults()">RESET DEFAULTS</button>
+	<script type="text/javascript">
+		function setFirstName() {
+			// Change the content of h1 to your first name
+            let f_name=document.getElementById("firstname").innerText="Kapil";
+            console.log(f_name);
+		}
+
+		function setLastName() {
+			// Change the content of div to your last name
+            let l_name=document.getElementById("lastname").innerText="Malhotra";
+            console.log(f_name);
+		}
+
+		function setFullName() {
+			// Change the content of p to your full name (firstname - lastname)
+            let full_name=document.getElementById("fullname").innerText="KAPIL MALHOTRA";
+            console.log(full_name);
+		}
+
+		function resetDefaults(){
+			// reset the firstname, lastname, and fullname to empty values
+            let H_name=document.getElementById("firstname").innerText="Hello";
+            console.log(H_name);
+            let P_name=document.getElementById("lastname").innerText="MASAI";
+            console.log(P_name);
+            let Q_name=document.getElementById("fullname").innerText="School";
+            console.log(Q_name);
+		}
+	</script>
+</body>
+</html>
